@@ -2,7 +2,7 @@ import React from "react";
 
 export const NavbarComponent = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg bg-light" style={{backgroundColor: "white"}}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#" style={{color: "#ffb422", fontSize: "2rem", fontWeight: "bold"}}>
           Goodwish

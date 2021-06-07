@@ -104,10 +104,6 @@ export const HomeComponent = () =>{
                     Subscribe
                 </Button>
             </section>
-
-
-
-
         </main>
     )
 }
