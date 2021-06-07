@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6{
+    font-family: Roboto !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-inner img{
+    min-width: 100vw !important;
+    height: 600px !important; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.carousel-indicators > button{
+    height: 15px !important;
+    border-radius: 50% !important;
+    width: 15px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel-indicators > button.active{
+    background-color: #ffb422;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-caption > h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.carousel-caption > p{
+    font-size: 1.3rem;
 }
