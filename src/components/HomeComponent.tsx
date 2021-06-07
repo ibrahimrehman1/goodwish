@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet"
 import CharityPic1 from "../assets/Charity-Pic1.jpg";
 import CharityPic2 from "../assets/Charity-Pic2.jpg";
 import CharityPic3 from "../assets/Charity-Pic3.jpg";
+import {Button} from "@material-ui/core";
 
 export const HomeComponent = () =>{
     return(
@@ -50,8 +51,63 @@ export const HomeComponent = () =>{
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-                
             </header>
+
+            <section className="section__1">
+                <img src={CharityPic1} alt="Five developers at work." />
+                <div>
+                    <h3>Today is the day to reach out and lend a helping hand</h3>
+                    <Button variant="contained">
+                        Donate
+                    </Button>
+                </div>
+            </section>
+            <section className="section__1">
+                <img src={CharityPic2} alt="Five developers at work." />
+                <div>
+                    <h3>Even the smallest of donations can help change a life</h3>
+                    <Button variant="contained">
+                        Donate
+                    </Button>
+                </div>
+            </section>
+            <section className="section__1">
+                <img src={CharityPic3} alt="Five developers at work." />
+                <div>
+                    <h3>Become a volunteer. You’ll feel the benefits instantly</h3>
+                    <Button variant="contained">
+                        Donate
+                    </Button>
+                </div>
+            </section>
+            <section className="section__2">
+                <div style={{width: "800px"}}>
+                    <h2 style={{fontSize: "2.5rem", fontWeight: "bolder"}}>Who We Are</h2>
+                    <p>Organization set up to provide help and raise money for those in need</p>
+                    <img src={CharityPic1} alt="" style={{width: "800px"}}/>
+                    <h2>Places To Get Lost</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit hendrerit faucibus. Suspendisse hendrerit turpis dui, eget ultricies erat consequat ut. Sed ac velit iaculis, condimentum neqlu.</p>
+                    <img src={CharityPic2} alt="" style={{width: "800px"}}/>
+                    <h2>Healthy Food For All</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit hendrerit faucibus. Suspendisse hendrerit turpis dui, eget ultricies erat consequat ut. Sed ac velit iaculis, condimentum neqlu.</p>
+                    <img src={CharityPic3} alt="" style={{width: "800px"}}/>
+                    <h2>Green Organization</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit hendrerit faucibus. Suspendisse hendrerit turpis dui, eget ultricies erat consequat ut. Sed ac velit iaculis, condimentum neqlu.</p>
+
+                </div>
+            </section>
+
+
+            <section className="section__3">
+                <h2>Subscribe and receive weekly<br /> our newsletter</h2>
+                <Button variant="contained">
+                    Subscribe
+                </Button>
+            </section>
+
+
+
+
         </main>
     )
 }
