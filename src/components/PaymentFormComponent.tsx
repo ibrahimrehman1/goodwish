@@ -1,13 +1,13 @@
 import React from "react";
 import {Button} from "@material-ui/core";
-import {loadStripe, StripePaymentRequestButtonElementClickEvent} from "@stripe/stripe-js";
+import {loadStripe,} from "@stripe/stripe-js";
+import {Helmet} from "react-helmet";
 
 const stripePromise = loadStripe("pk_test_51IzwHpSD2SVNlhIBRyPZ6S6cyRol7gTcLpFsY4pi3u9nIpEgs266lzWDY5rkIMn8jVNFXQeNVsRVWdCLdcUnvsMp0042Fn7QNx")
 
 
 
 export const PaymentForm = () =>{
-
     
     async function handleDonation1(){
         const stripe = await stripePromise;
@@ -79,15 +79,18 @@ export const PaymentForm = () =>{
    
     return(
         <>
-        
+            <Helmet>
+                <title>Available Donation Packages</title>
+            </Helmet>
             <form>
-                <h1>Donation</h1>
+
+                <h1>Donation Packages</h1>
                 <div>
-                    <Button type="button" variant="contained" color="secondary" onClick={handleDonation1}>Donate 100 PKR</Button>
-                    <Button type="button" variant="contained" color="secondary" onClick={handleDonation2}>Donate 500 PKR</Button>
-                    <Button type="button" variant="contained" color="secondary" onClick={handleDonation3}>Donate 1000 PKR</Button>
-                    <Button type="button" variant="contained" color="secondary" onClick={handleDonation4}>Donate 5000 PKR</Button>
-                    <Button type="button" variant="contained" color="secondary" onClick={handleDonation5}>Donate 10000 PKR</Button>
+                    <Button type="button" variant="contained" color="primary" onClick={handleDonation1}>Donate 100 PKR</Button>
+                    <Button type="button" variant="contained" color="primary" onClick={handleDonation2}>Donate 500 PKR</Button>
+                    <Button type="button" variant="contained" color="primary" onClick={handleDonation3}>Donate 1000 PKR</Button>
+                    <Button type="button" variant="contained" color="primary" onClick={handleDonation4}>Donate 5000 PKR</Button>
+                    <Button type="button" variant="contained" color="primary" onClick={handleDonation5}>Donate 10000 PKR</Button>
                 </div>
             </form>
         </>

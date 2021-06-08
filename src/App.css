@@ -195,7 +195,6 @@ form > div{
     flex-direction: column;
     height: 450px;
     justify-content: space-between;
-    box-shadow: 1px 1px 5px 1px rgb(228, 228, 228);
     padding: 2em;
 }
 

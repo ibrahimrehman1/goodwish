@@ -7,6 +7,10 @@ import {Button} from "@material-ui/core";
 import {Link} from "react-router-dom";
 
 export const HomeComponent = () =>{
+
+    function handleScroll(){
+        window.location.assign("/payment")
+    }
     return(
         <main>
             <Helmet>
@@ -58,37 +62,32 @@ export const HomeComponent = () =>{
                 <img src={CharityPic1} alt="Five developers at work." />
                 <div>
                     <h3>Today is the day to reach out and lend a helping hand</h3>
-                    <Link to="/payment">
-                        <Button variant="contained">
-                            Donate
-                        </Button>
-                    </Link>
+                    
+                    <button onClick={handleScroll}>
+                        Donate
+                    </button>
                 </div>
             </section>
             <section className="section__1">
                 <img src={CharityPic2} alt="Five developers at work." />
                 <div>
                     <h3>Even the smallest of donations can help change a life</h3>
-                    <Link to="/payment">
 
-                    <Button variant="contained">
+                    <button onClick={handleScroll}>
                         Donate
-                    </Button>
+                    </button>
 
-                    </Link>
                 </div>
             </section>
             <section className="section__1">
                 <img src={CharityPic3} alt="Five developers at work." />
                 <div>
                     <h3>Become a volunteer. You’ll feel the benefits instantly</h3>
-                    <Link to="/payment">
 
-                        <Button variant="contained">
-                            Donate
-                        </Button>
+                    <button onClick={handleScroll}>
+                        Donate
+                    </button>
 
-                    </Link>
                 </div>
             </section>
             <section className="section__2">
@@ -111,7 +110,7 @@ export const HomeComponent = () =>{
 
             <section className="section__3">
                 <h2>Subscribe and receive weekly<br /> our newsletter</h2>
-                <Button variant="contained">
+                <Button variant="contained" onClick={handleScroll}>
                     Subscribe
                 </Button>
             </section>
