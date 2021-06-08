@@ -1,12 +1,14 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
+
 
 export const NavbarComponent = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light" style={{backgroundColor: "white"}}>
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#" style={{color: "#ffb422", fontSize: "2rem", fontWeight: "bold"}}>
+    <nav className="navbar navbar-expand-lg" style={{backgroundColor: "white", textAlign: "center", padding: "1em", boxShadow: "1px 1px 5px 1px #d6d6d6"}}>
+      <div className="container-fluid" style={{display: "block"}}>
+        <NavLink to="/" className="navbar-brand" href="#" style={{color: "#ffb422", fontSize: "3rem", fontWeight: "bold"}}>
           Goodwish
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -16,22 +18,7 @@ export const NavbarComponent = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav" >
-                <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                    Home
-                </a>
-                </li>
-                <li className="nav-item">
-                <a className="nav-link" href="#">
-                    Features
-                </a>
-                </li>
-            </ul>
-        </div>
       </div>
     </nav>
   );

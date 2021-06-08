@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5, h6{
     font-family: Roboto !important;
 }
 
+
+nav{
+    position: sticky !important;
+    left: 0px !important;
+    right: 0px !important;
+    top: 0px !important;
+    z-index: 1000;
+}
+
 .carousel-inner img{
     min-width: 100vw !important;
     height: 600px !important; 
@@ -46,7 +55,6 @@ h1, h2, h3, h4, h5, h6{
     height: 400px;
 }
 
-
 .section__1 > div{
     position: relative;
     display: inline-block;
@@ -60,12 +68,22 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bolder;
 }
 
-.section__1 > div > button{
+.section__1 > div button{
     margin-top: 20px;
     font-weight: bold;
-    background-color: white !important;
+    background-color: transparent !important;
     border-radius: 20px;
-    padding: .8em 2em;
+    padding: .5em 2.8em;
+    border: 2px solid white;
+    color: white;
+}
+
+.section__1 > div button:hover{
+    background-color: #ffaa00 !important;
+}
+
+a{
+    text-decoration: none !important;
 }
 
 
@@ -159,4 +177,46 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: row;
     justify-content: space-around;
     color: rgb(158, 158, 158);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+form > div{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px 1px rgb(228, 228, 228);
+    padding: 2em;
+}
+
+
+form > h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.button-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-div button:nth-child(2){
+    margin-left: 20px;
+}
+
+.button-div button{
+    font-weight: bold;
 }

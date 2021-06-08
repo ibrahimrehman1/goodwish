@@ -4,6 +4,7 @@ import CharityPic1 from "../assets/Charity-Pic1.jpg";
 import CharityPic2 from "../assets/Charity-Pic2.jpg";
 import CharityPic3 from "../assets/Charity-Pic3.jpg";
 import {Button} from "@material-ui/core";
+import {Link} from "react-router-dom";
 
 export const HomeComponent = () =>{
     return(
@@ -57,27 +58,37 @@ export const HomeComponent = () =>{
                 <img src={CharityPic1} alt="Five developers at work." />
                 <div>
                     <h3>Today is the day to reach out and lend a helping hand</h3>
-                    <Button variant="contained">
-                        Donate
-                    </Button>
+                    <Link to="/payment">
+                        <Button variant="contained">
+                            Donate
+                        </Button>
+                    </Link>
                 </div>
             </section>
             <section className="section__1">
                 <img src={CharityPic2} alt="Five developers at work." />
                 <div>
                     <h3>Even the smallest of donations can help change a life</h3>
+                    <Link to="/payment">
+
                     <Button variant="contained">
                         Donate
                     </Button>
+
+                    </Link>
                 </div>
             </section>
             <section className="section__1">
                 <img src={CharityPic3} alt="Five developers at work." />
                 <div>
                     <h3>Become a volunteer. You’ll feel the benefits instantly</h3>
-                    <Button variant="contained">
-                        Donate
-                    </Button>
+                    <Link to="/payment">
+
+                        <Button variant="contained">
+                            Donate
+                        </Button>
+
+                    </Link>
                 </div>
             </section>
             <section className="section__2">
