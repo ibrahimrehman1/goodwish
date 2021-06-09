@@ -8,6 +8,8 @@ const stripePromise = loadStripe("pk_test_51IzwHpSD2SVNlhIBRyPZ6S6cyRol7gTcLpFsY
 
 
 export const PaymentForm = () =>{
+
+    window.scrollTo(0, 0);
     
     async function handleDonation1(){
         const stripe = await stripePromise;

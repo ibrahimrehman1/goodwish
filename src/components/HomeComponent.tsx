@@ -4,12 +4,9 @@ import CharityPic1 from "../assets/Charity-Pic1.jpg";
 import CharityPic2 from "../assets/Charity-Pic2.jpg";
 import CharityPic3 from "../assets/Charity-Pic3.jpg";
 import {Button} from "@material-ui/core";
+import {Link} from "react-router-dom";
 
 export const HomeComponent = () =>{
-
-    function handleScroll(){
-        window.location.assign("/payment")
-    }
     return(
         <main>
             <Helmet>
@@ -62,9 +59,11 @@ export const HomeComponent = () =>{
                 <div>
                     <h3>Today is the day to reach out <br />and lend a helping hand</h3>
                     
-                    <button onClick={handleScroll}>
-                        Donate
-                    </button>
+                    <Link to="/payment">
+                        <button>
+                            Donate
+                        </button>
+                    </Link>
                 </div>
             </section>
             <section className="section__1">
@@ -72,9 +71,11 @@ export const HomeComponent = () =>{
                 <div>
                     <h3>Even the smallest of donations can<br /> help change a life</h3>
 
-                    <button onClick={handleScroll}>
-                        Donate
-                    </button>
+                    <Link to="/payment">
+                        <button>
+                            Donate
+                        </button>
+                    </Link>
 
                 </div>
             </section>
@@ -83,9 +84,11 @@ export const HomeComponent = () =>{
                 <div>
                     <h3>Become a volunteer. You’ll feel the<br /> benefits instantly</h3>
 
-                    <button onClick={handleScroll}>
-                        Donate
-                    </button>
+                    <Link to="/payment">
+                        <button>
+                            Donate
+                        </button>
+                    </Link>
 
                 </div>
             </section>
@@ -109,7 +112,7 @@ export const HomeComponent = () =>{
 
             <section className="section__3">
                 <h2>Subscribe and receive weekly<br /> our newsletter</h2>
-                <Button variant="contained" onClick={handleScroll}>
+                <Button variant="contained">
                     Subscribe
                 </Button>
             </section>
