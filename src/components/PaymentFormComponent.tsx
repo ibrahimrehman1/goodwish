@@ -20,8 +20,8 @@ export const PaymentForm = () =>{
                 quantity: 1
             }],
             mode: "payment",
-            successUrl: "http://localhost:3000/",
-            cancelUrl: "http://localhost:3000/",
+            successUrl: "https://goodwish-donation-payment-integration.netlify.app/",
+            cancelUrl: "https://goodwish-donation-payment-integration.netlify.app/",
         })
     }
     async function handleDonation2(){
