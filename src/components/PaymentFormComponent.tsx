@@ -3,7 +3,7 @@ import {Button} from "@material-ui/core";
 import {loadStripe,} from "@stripe/stripe-js";
 import {Helmet} from "react-helmet";
 
-const stripePromise = loadStripe("pk_test_51IzwHpSD2SVNlhIBRyPZ6S6cyRol7gTcLpFsY4pi3u9nIpEgs266lzWDY5rkIMn8jVNFXQeNVsRVWdCLdcUnvsMp0042Fn7QNx")
+const stripePromise = loadStripe("Enter Your Stripe Publisable Key Here")
 
 
 
@@ -33,8 +33,8 @@ export const PaymentForm = () =>{
                 quantity: 1
             }],
             mode: "payment",
-            successUrl: "http://localhost:3000/",
-            cancelUrl: "http://localhost:3000/",
+            successUrl: "https://goodwish-donation-payment-integration.netlify.app/",
+            cancelUrl: "https://goodwish-donation-payment-integration.netlify.app/",
         })
     }
     async function handleDonation3(){
@@ -46,8 +46,8 @@ export const PaymentForm = () =>{
                 quantity: 1
             }],
             mode: "payment",
-            successUrl: "http://localhost:3000/",
-            cancelUrl: "http://localhost:3000/",
+            successUrl: "https://goodwish-donation-payment-integration.netlify.app/",
+            cancelUrl: "https://goodwish-donation-payment-integration.netlify.app/",
         })
     }
     async function handleDonation4(){
@@ -59,8 +59,8 @@ export const PaymentForm = () =>{
                 quantity: 1
             }],
             mode: "payment",
-            successUrl: "http://localhost:3000/",
-            cancelUrl: "http://localhost:3000/",
+            successUrl: "https://goodwish-donation-payment-integration.netlify.app/",
+            cancelUrl: "https://goodwish-donation-payment-integration.netlify.app/",
         })
     }
     async function handleDonation5(){
@@ -72,8 +72,8 @@ export const PaymentForm = () =>{
                 quantity: 1
             }],
             mode: "payment",
-            successUrl: "http://localhost:3000/",
-            cancelUrl: "http://localhost:3000/",
+            successUrl: "https://goodwish-donation-payment-integration.netlify.app/",
+            cancelUrl: "https://goodwish-donation-payment-integration.netlify.app/",
         })
     }
 
